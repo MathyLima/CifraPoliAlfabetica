@@ -1,8 +1,10 @@
-import Utils.ConversaoCase (stringToLower)
+module Cypher.MonoAlpha (monoAlphaCipherE,monoAlphaCipherD) where
+
+import Utils.ClearString (clearString)
 
 -- Função para criptografar
 monoAlphaCipherE :: [Char] -> String -> String
-monoAlphaCipherE key input = map (`substitute` key) (stringToLower input)
+monoAlphaCipherE key input = map (`substitute` key) (clearString input)
   where
     substitute c key = 
       let alphabet = ['a'..'z']
@@ -17,7 +19,7 @@ monoAlphaCipherE key input = map (`substitute` key) (stringToLower input)
 
 -- Função para descriptografar
 monoAlphaCipherD :: [Char] -> String -> String
-monoAlphaCipherD key input = map (`substitute` key) (stringToLower input)
+monoAlphaCipherD key input = map (`substitute` key) (clearString input)
   where
     substitute c key = 
       let alphabet = ['a'..'z']
