@@ -57,5 +57,4 @@ Essa conversão é aplicada automaticamente **antes da criptografia ou descripto
 ```
 cabal install text unicode-transforms
 cabal install random
-
 ```
