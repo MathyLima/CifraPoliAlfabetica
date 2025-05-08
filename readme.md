@@ -51,3 +51,11 @@ Ela percorre a string e:
 - Deixa os demais caracteres (como espaços e pontuação) inalterados.
 
 Essa conversão é aplicada automaticamente **antes da criptografia ou descriptografia**.
+
+
+## Packages necessários 
+```
+cabal install text unicode-transforms
+cabal install random
+
+```
