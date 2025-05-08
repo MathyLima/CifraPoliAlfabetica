@@ -1,7 +1,7 @@
 module Cypher.PolyAlpha (polyAlphaCipherE,polyAlphaCipherD) where
 
 import Cypher.MonoAlpha (monoAlphaCipherE,monoAlphaCipherD)
-import Utils.ParticionaTexto (splitEvery)
+import Utils.SplitText (splitEvery)
 
 
 -- Função de criptografia polialfabética

@@ -1,4 +1,4 @@
-module Utils.ParticionaTexto (splitEvery) where
+module Utils.SplitText (splitEvery) where
 
 splitEvery :: Int -> [a] -> [[a]]
 splitEvery _ [] = []
